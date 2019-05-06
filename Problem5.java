@@ -6,7 +6,21 @@
 public class Problem5{
 
 	public static void main (String[] args){
-		
-		
+		int i = 2520;
+		boolean found = false;
+		while (!found){
+			i +=2520;
+			boolean divisivel = true;
+			for (int j = 11; j <=20; j++){
+				if(i % j !=0){		
+					divisivel = false;
+					break;
+				}
+			}
+			if (divisivel){
+				found = true;
+			}
+		}
+		System.out.println(i);		
 	}
 }
